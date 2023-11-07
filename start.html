@@ -13,19 +13,15 @@
 
   </div>
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6"></script>
   <script>
 
-    const { createApp, ref } = Vue
-
-    createApp({
-      setup() {
-        const message = ref('Hello World. Estamos usando Vue, Hilton!')
-        return {
-          message
-        }
+    var app = new Vue({
+      el: '#start',
+      data: {
+        message: 'Hello World. Estamos usando o Vue, Hilton!'
       }
-    }).mount('#start')
+    })
 
   </script>
 </body>
